@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.news_flutter">
    <application
-        android:label="Flutter News"
+        android:label="Daily Bulletin"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
