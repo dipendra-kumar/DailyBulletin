@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'article_view.dart';
 
 class BlogTile extends StatelessWidget {
@@ -29,15 +30,9 @@ class BlogTile extends StatelessWidget {
           child: Container(
               padding: EdgeInsets.symmetric(horizontal: 5, vertical: 6),
               decoration: BoxDecoration(
-                  color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black54,
-                        blurRadius: 3.5,
+                  border: Border.all(color: Colors.grey, width: 2)
 
-                    )
-                  ]
 
               ),
               child: Column(
@@ -68,7 +63,7 @@ class BlogTile extends StatelessWidget {
                         textAlign: TextAlign.justify,
                         maxLines: 3,
                         overflow: TextOverflow.fade,
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black54)),
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.grey)),
                   ),
                   (author == null) ? SizedBox(height: 5,) : Divider(),
                   Row(
