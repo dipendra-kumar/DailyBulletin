@@ -53,7 +53,6 @@ class _HomeState extends State<Home> {
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return [
             SliverAppBar(
-
               floating: true,
               flexibleSpace: FlexibleSpaceBar(title: Text("Top Headlines", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),),),
             )
