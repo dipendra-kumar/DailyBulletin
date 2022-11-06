@@ -21,7 +21,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
       width: MediaQuery.of(context).size.width * 0.7,
       child: SafeArea(
         child: Material(
-          color: Colors.blueGrey[100],
+
           child: ListView(
             physics: const NeverScrollableScrollPhysics(),
             padding: EdgeInsets.only(top: 10, left: 10),
@@ -43,7 +43,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
               const SizedBox(
                 height: 20,
               ),
-              Divider(color: Colors.deepPurple,height: 2),
+              Divider(color: Colors.grey,height: 2),
               const SizedBox(height: 20,),
               buildMenuItem(
                 isSelected: selectedIndex == 1,
